@@ -39,7 +39,7 @@
       "symbol": "WOOFY",
       "address": "0xD0660cD418a64a1d44E9214ad8e459324D8157f1",
       "chainId": 250,
-      "decimals": 18,
+      "decimals": 12,
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/tokens/0xD0660cD418a64a1d44E9214ad8e459324D8157f1/logo-128.png"
     },
     {
@@ -133,7 +133,7 @@
     {
       "name": "Wrapped FTM",
       "symbol": "WFTM",
-      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       "chainId": 250,
       "decimals": 18,
       "logoURI": ""
