@@ -1102,6 +1102,7 @@ export const bscPools = [
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
+    platform: 'MDex',
     assets: ['MDX'],
     callFee: 0.5,
     buyTokenUrl:
