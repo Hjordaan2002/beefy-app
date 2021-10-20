@@ -71,6 +71,7 @@ export function fetchBalances({ address, web3, tokens }) {
             newTokens[balanceResult.symbol] = {
               ...tokens[balanceResult.symbol],
               tokenBalance: balanceResult.balance,
+              launchpoolTokenBalance: '0',
             };
           });
 
@@ -85,11 +86,8 @@ export function fetchBalances({ address, web3, tokens }) {
           });
 
           launchpoolBalanceResults.forEach(launchPoolBalanceResult => {
-            const previousBalance = newTokens[launchPoolBalanceResult.symbol]
-              ? newTokens[launchPoolBalanceResult.symbol].launchpoolTokenBalance
-                ? newTokens[launchPoolBalanceResult.symbol].launchpoolTokenBalance
-                : 0
-              : 0;
+            const previousBalance =
+              newTokens[launchPoolBalanceResult.symbol]?.launchpoolTokenBalance || 0;
             newTokens[launchPoolBalanceResult.symbol] = {
               ...newTokens[launchPoolBalanceResult.symbol],
               launchpoolTokenBalance: new BigNumber.sum(
